@@ -1,0 +1,4 @@
+lisc==0.2.0
+matplotlib==3.4.2
+numpy==1.19.5
+urllib==1.26.6

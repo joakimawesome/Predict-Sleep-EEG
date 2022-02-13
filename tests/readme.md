@@ -4,6 +4,8 @@
 Include this line at the top of your notebooks:
 ```
 # adding path to import things from "data" and "utils" directories.
+import sys
+import os
 sys.path.append(os.path.dirname(os.getcwd()))
 ```
 

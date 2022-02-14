@@ -19,4 +19,4 @@ def format_terms(words, tool):
     elif tool == 'lisc':
         return [f'"{word}"' for word in words]
     else:
-        raise Exception("Argument 'tool' missing. Must be 'urllib' or 'lisc'.")
+        raise Exception("Invalid argument 'tool'. Must be 'urllib' or 'lisc'.")

@@ -1,6 +1,6 @@
 """Create appropriate format for search terms."""
 
-def format_terms(words: list[str], tool: str):
+def format_terms(words, tool):
     """
     Parameters
     ----------

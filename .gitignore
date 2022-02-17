@@ -1,2 +1,9 @@
 # Ignore cache files
 __pycache__/
+
+scripts/
+
+lisc-issue.ipynb
+
+annotations/
+EEG/

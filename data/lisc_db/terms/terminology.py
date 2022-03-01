@@ -177,3 +177,24 @@ bycycle_features = {
     "Sample Rise": "sample_zerox_rise",
     "Sample Decay": "sample_zerox_decay"
 }
+
+waves = ["alpha", "delta", "theta", "beta", "gamma", "sigma"]
+
+eeg_features_2 = [
+    "oscillations",
+    "rhythm",
+    "waves",
+    "power",
+    "coherence",
+    "phase",
+    "frequency",
+    "band"
+]
+
+additional_features = [
+    "k-complex",
+    "sleep spindles",
+    "aperiodic",
+    "phase-amplitude coupling",
+    "slow wave"
+]

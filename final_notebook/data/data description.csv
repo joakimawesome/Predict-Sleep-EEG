@@ -1,0 +1,9 @@
+,Name,Sampling frequency,Age,Sex,Time of the excerpt (from the begining of the recording),Annoted channel,Nr. of spindles scored by expert1,Nr. of spindles scored by expert2
+0,excerpt1 ,100Hz ,51,Woman ,extracted from 03:15:00 to 03:45:00 ,C3-A1 ,52,115
+1,excerpt2 ,200Hz ,40,Man ,extracted from 00:00:00 to 00:30:00 ,CZ-A1 ,60,52
+2,excerpt3 ,50Hz ,46,Man ,extracted from 03:30:00 to 04:00:00 ,C3-A1 ,5,44
+3,excerpt4 ,200Hz ,31,Man ,extracted from 01:55:00 to 02:25:00 ,CZ-A1 ,44,25
+4,excerpt5 ,200Hz ,53,Woman ,extracted from 02:15:00 to 02:45:00 ,CZ-A1 ,56,86
+5,excerpt6 ,200Hz ,53,Woman ,extracted from 03:00:00 to 03:30:00 ,CZ-A1 ,72,87
+6,excerpt7 ,200Hz ,41,Woman ,extracted from 02:41:40 to 03:11:40 ,CZ-A1 ,18,/
+7,excerpt8 ,200Hz ,52,Man ,extracted from 05:01:30 to 05:31:30 ,CZ-A1 ,48,/

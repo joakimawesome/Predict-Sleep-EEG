@@ -93,7 +93,7 @@ def pick_top(counts, top_n:int=None, thresh:float=None) -> list[tuple]:
     if top_n:
         thresh = 0
 
-    assert 0 < thresh < 1, "'thresh' must be float between 0 and 1."
+    assert 0 <= thresh <= 1, "'thresh' must be float between 0 and 1."
 
     for i in range(len_A):
         for j in range(len_B):

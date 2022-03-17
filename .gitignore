@@ -1,11 +1,8 @@
 # Ignore cache files
 __pycache__/
-scripts/
 
-# tests/
-lisc-issue.ipynb
-
-# data/
-annotations/
-EEG/
-OSF_HeadMap64ch.pdf
+cleaned_eeg/
+extracted_features/
+lisc_analysis/
+original_eeg/
+spindle_files/

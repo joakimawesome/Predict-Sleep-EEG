@@ -5,13 +5,26 @@ import copy
 import pandas as pd
 from lisc.utils.io import save_object
 
-def format_terms(words:list[str], tool:str) -> str:
+def format_terms(words, tool):
+    """
+    Parameters
+    ----------
+    words : list of str
+    tool : {'urllib', 'lisc'}
+        Package name that performs the search.
+        
+    Returns
+    -------
+    str : containing the terms as substrings in double quotes joined by "OR" as per urllib format.
+    list : containing the terms in double quotes as per lisc format.
+    """
+    
     if tool == 'urllib':
         return ' OR '.join([f'"{word}"' for word in words])
     elif tool == 'lisc':
         return [f'"{word}"' for word in words]
     else:
-        raise Exception("Argument 'tool' missing. Must be 'urllib' or 'lisc'.")
+        raise Exception("Invalid argument 'tool'. Must be 'urllib' or 'lisc'.")
 
 
 def run_and_save(counts, filename:str, db):
@@ -31,8 +44,7 @@ def run_and_save(counts, filename:str, db):
     counts.run_collection()
 
     # Save the data to SCDB.
-    main_dir = os.path.dirname(os.getcwd())
-    db_dir = os.path.join(main_dir, 'data/', db.get_folder_path('counts'))
+    db_dir = os.path.join('lisc_analysis/', db.get_folder_path('counts'))
     save_object(counts, filename, directory=db_dir)
 
 
@@ -51,9 +63,8 @@ def load_counts(filename:str, db):
     -------
     Counts
     '''
-    main_dir = os.path.dirname(os.getcwd())
     data_rpath = db.get_file_path('counts', filename)
-    data_abspath = os.path.join(main_dir, 'data/', data_rpath)
+    data_abspath = os.path.join('lisc_analysis/', data_rpath)
     return pd.read_pickle(data_abspath)
 
     
